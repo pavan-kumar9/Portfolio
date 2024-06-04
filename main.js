@@ -56,11 +56,11 @@ function addStars() {
 
 Array(200).fill().forEach(addStars);
 
-const spaceImage = new THREE.TextureLoader().load("best.jpg");
+const spaceImage = new THREE.TextureLoader().load("/best.jpg");
 scene.background = spaceImage;
 
 // Profile Pic
-const pavanImage = new THREE.TextureLoader().load("profile.jpg");
+const pavanImage = new THREE.TextureLoader().load("/profile.jpg");
 
 const pavan = new THREE.Mesh(
   new THREE.BoxGeometry(3, 3, 3),
@@ -71,7 +71,7 @@ scene.add(pavan);
 
 // Earth
 
-const earthImage = new THREE.TextureLoader().load("light.jpg");
+const earthImage = new THREE.TextureLoader().load("/light.jpg");
 
 const earth = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
