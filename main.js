@@ -70,7 +70,6 @@ const pavan = new THREE.Mesh(
 scene.add(pavan);
 
 // Earth
-
 const earthImage = new THREE.TextureLoader().load("/light.jpg");
 
 const earth = new THREE.Mesh(
@@ -88,6 +87,20 @@ earth.position.setX(-10);
 
 pavan.position.z = -5;
 pavan.position.x = 2;
+
+const meteorImage = new THREE.TextureLoader().load("/light.jpg");
+
+const meteor = new THREE.Mesh(
+  new THREE.DodecahedronGeometry(10.431, 0),
+  new THREE.MeshBasicMaterial({ map: meteorImage })
+);
+
+scene.add(meteor);
+
+meteor.position.z = 60;
+meteor.position.x = 80;
+meteor.position.setX(-10);
+
 
 function moveCamera() {
   const t = document.body.getBoundingClientRect().top;
