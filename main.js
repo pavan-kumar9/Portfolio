@@ -56,7 +56,7 @@ function addStars() {
 
 Array(200).fill().forEach(addStars);
 
-const spaceImage = new THREE.TextureLoader().load("best.jpg");
+const spaceImage = new THREE.TextureLoader().load("pavan-kumar9/Portfolio/best.jpg");
 scene.background = spaceImage;
 
 // Profile Pic
